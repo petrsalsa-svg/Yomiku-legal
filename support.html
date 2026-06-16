@@ -1,140 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support - LumoChat</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support - Yomiku</title>
   <style>
-    :root {
-      color-scheme: dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #090914;
-      color: #f7f2ff;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at top left, rgba(167,139,250,0.35), transparent 34rem),
-        radial-gradient(circle at bottom right, rgba(45,212,191,0.20), transparent 32rem),
-        #090914;
-    }
-
-    main {
-      width: min(900px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 48px 0 64px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      box-shadow: 0 24px 70px rgba(0,0,0,0.35);
-      border-radius: 28px;
-      padding: 32px;
-      backdrop-filter: blur(18px);
-    }
-
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 22px;
-    }
-
-    .mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 11px;
-      background: linear-gradient(135deg, #a78bfa, #2dd4bf);
-      box-shadow: 0 12px 30px rgba(124,58,237,0.35);
-    }
-
-    h1 {
-      font-size: clamp(34px, 6vw, 54px);
-      line-height: 1.02;
-      margin: 0 0 10px;
-      letter-spacing: -0.05em;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin: 34px 0 10px;
-    }
-
-    p, li {
-      color: rgba(247,242,255,0.82);
-      font-size: 16px;
-      line-height: 1.65;
-    }
-
-    a {
-      color: #c4b5fd;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: rgba(247,242,255,0.72);
-      margin-bottom: 28px;
-    }
-
-    .updated {
-      font-size: 14px;
-      color: rgba(247,242,255,0.55);
-      margin-top: 28px;
-    }
-
-    .back {
-      display: inline-block;
-      margin-top: 24px;
-      text-decoration: none;
-      font-weight: 700;
-    }
+    :root { color-scheme: dark; --bg:#0b1020; --card:#141b34; --text:#f7f7ff; --muted:#b9c0d4; --accent:#9b7cff; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:#0b1020; color:var(--text); padding:32px; }
+    main { max-width:860px; margin:0 auto; background:rgba(20,27,52,.78); border:1px solid rgba(255,255,255,.12); border-radius:28px; padding:34px; }
+    .brand { color:var(--accent); font-weight:800; margin-bottom:18px; }
+    h1 { font-size:36px; margin:0 0 8px; letter-spacing:-.03em; }
+    h2 { margin-top:28px; }
+    p, li { color:var(--muted); line-height:1.65; font-size:16px; }
+    a { color:var(--accent); font-weight:700; }
   </style>
 </head>
 <body>
   <main>
-    <div class="card">
-      <div class="logo"><span class="mark"></span><span>LumoChat</span></div>
+    <div class="brand">Yomiku</div>
+    <h1>Support</h1>
+    <p>Help and contact information for Yomiku.</p>
+    <p>If you need help with Yomiku, subscriptions, invite links, translated chats, notifications, or account deletion, contact us by email.</p>
 
-      <h1>Support</h1>
-      <p class="subtitle">Help and contact information for LumoChat.</p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:support@yomiku.app">support@yomiku.app</a></p>
 
-      <p>If you need help with LumoChat, subscriptions, invite links, translated chats, notifications, or account deletion, contact us by email.</p>
+    <h2>Common support topics</h2>
+    <ul>
+      <li>Creating and accepting invite links.</li>
+      <li>Subscription plans and chat limits.</li>
+      <li>Restore Purchases.</li>
+      <li>Push notifications.</li>
+      <li>Message delivery states such as sent, delivered, and read.</li>
+      <li>Deleting your account.</li>
+      <li>Translation quality or incorrect translations.</li>
+    </ul>
 
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:Lumochat1@gmail.com">Lumochat1@gmail.com</a></p>
+    <h2>Subscriptions</h2>
+    <p>Subscriptions are managed by Apple through your Apple ID. You can manage or cancel subscriptions in iOS Settings under your Apple ID subscriptions.</p>
 
-      <h2>Common support topics</h2>
-      <ul>
-        <li>Creating and accepting invite links.</li>
-        <li>Subscription plans and chat limits.</li>
-        <li>Restore Purchases.</li>
-        <li>Push notifications.</li>
-        <li>Message delivery states such as sent, delivered, and read.</li>
-        <li>Deleting your account.</li>
-        <li>Translation quality or incorrect translations.</li>
-      </ul>
+    <h2>Restore Purchases</h2>
+    <p>If your subscription is active but premium features are not available, open Yomiku and use Restore Purchases from the subscription or profile area.</p>
 
-      <h2>Subscriptions</h2>
-      <p>Subscriptions are managed by Apple through your Apple ID. You can manage or cancel subscriptions in iOS Settings under your Apple ID subscriptions.</p>
+    <h2>Account deletion</h2>
+    <p>You can delete your account directly in the Yomiku app from the profile or settings area.</p>
 
-      <h2>Restore Purchases</h2>
-      <p>If your subscription is active but premium features are not available, open LumoChat and use Restore Purchases from the subscription or profile area.</p>
+    <h2>Translation issues</h2>
+    <p>Yomiku uses AI translation. Translations may sometimes be inaccurate, incomplete, or use the wrong tone. If a translation seems important, confirm the meaning with the other person before relying on it.</p>
 
-      <h2>Account deletion</h2>
-      <p>You can delete your account directly in the LumoChat app from the profile or settings area.</p>
-
-      <h2>Translation issues</h2>
-      <p>LumoChat uses AI translation. Translations may sometimes be inaccurate, incomplete, or use the wrong tone. If a translation seems important, confirm the meaning with the other person before relying on it.</p>
-
-      <p class="updated">Last updated: June 14, 2026</p>
-
-      <a class="back" href="index.html">Back to LumoChat</a>
-    </div>
+    <p>Last updated: June 16, 2026</p>
+    <p><a href="index.html">Back to Yomiku</a></p>
   </main>
 </body>
 </html>
