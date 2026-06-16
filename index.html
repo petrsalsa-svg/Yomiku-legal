@@ -4,27 +4,143 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yomiku</title>
+  <meta name="description" content="Yomiku legal, privacy, support and App Store links." />
   <style>
-    :root { color-scheme: dark; --bg:#0b1020; --card:#141b34; --text:#f7f7ff; --muted:#b9c0d4; --accent:#9b7cff; }
-    body { margin:0; min-height:100vh; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:radial-gradient(circle at top,#202a55 0,#0b1020 44%,#060914 100%); color:var(--text); display:flex; align-items:center; justify-content:center; padding:32px; }
-    main { width:min(760px,100%); background:rgba(20,27,52,.78); border:1px solid rgba(255,255,255,.12); border-radius:28px; padding:34px; box-shadow:0 24px 80px rgba(0,0,0,.35); }
-    h1 { font-size:44px; margin:0 0 12px; letter-spacing:-.04em; }
-    p { color:var(--muted); font-size:18px; line-height:1.6; margin:0 0 24px; }
-    nav { display:flex; flex-wrap:wrap; gap:12px; }
-    a { color:var(--text); text-decoration:none; background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.12); padding:12px 16px; border-radius:999px; font-weight:700; }
-    a:hover { background:rgba(155,124,255,.22); border-color:rgba(155,124,255,.5); }
+    :root {
+      color-scheme: dark;
+      --bg: #050816;
+      --card: rgba(19, 27, 55, 0.86);
+      --border: rgba(255, 255, 255, 0.13);
+      --text: #f6f7ff;
+      --muted: rgba(246, 247, 255, 0.72);
+      --button: rgba(255, 255, 255, 0.10);
+      --buttonBorder: rgba(255, 255, 255, 0.16);
+      --buttonHover: rgba(255, 255, 255, 0.16);
+      --accent1: #9b7cff;
+      --accent2: #5b7cfa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(125, 89, 255, 0.52), transparent 36%),
+        radial-gradient(circle at 15% 15%, rgba(64, 90, 255, 0.16), transparent 30%),
+        linear-gradient(180deg, #0a1028 0%, var(--bg) 58%, #03050d 100%);
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .card {
+      width: min(560px, 100%);
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--card);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.40);
+      backdrop-filter: blur(18px);
+    }
+
+    .app-icon {
+      width: 70px;
+      height: 70px;
+      display: grid;
+      place-items: center;
+      border-radius: 22px;
+      margin: 0 auto 18px;
+      font-size: 32px;
+      background: linear-gradient(135deg, var(--accent1), #8737ff);
+      box-shadow: 0 14px 36px rgba(134, 83, 255, 0.36);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 64px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      text-align: center;
+    }
+
+    p {
+      margin: 18px auto 30px;
+      max-width: 430px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    .links {
+      display: grid;
+      gap: 13px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 15px 20px;
+      border-radius: 18px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 750;
+      font-size: 17px;
+      border: 1px solid var(--buttonBorder);
+      background: var(--button);
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+
+    a.primary {
+      border: 0;
+      background: linear-gradient(135deg, var(--accent1), #8737ff);
+      box-shadow: 0 12px 28px rgba(134, 83, 255, 0.24);
+    }
+
+    a:hover {
+      transform: translateY(-1px);
+      background: var(--buttonHover);
+      border-color: rgba(255, 255, 255, 0.26);
+    }
+
+    a.primary:hover {
+      background: linear-gradient(135deg, #a98cff, #923fff);
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 13px;
+      color: rgba(246, 247, 255, 0.48);
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      body { padding: 18px; }
+      .card { padding: 26px 20px; border-radius: 24px; }
+      p { font-size: 16px; }
+      a { font-size: 16px; min-height: 54px; }
+    }
   </style>
 </head>
 <body>
-  <main>
+  <main class="card">
+    <div class="app-icon" aria-hidden="true">💬</div>
     <h1>Yomiku</h1>
     <p>Private translated chats for people who want to communicate across languages.</p>
-    <nav>
-      <a href="https://apps.apple.com/">Download on the App Store</a>
+
+    <nav class="links" aria-label="Yomiku links">
+      <a class="primary" href="https://apps.apple.com/app/id6780254715">Download Yomiku on the App Store</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
       <a href="disclaimer.html">Disclaimer</a>
     </nav>
+
+    <div class="footer">© 2026 Yomiku</div>
   </main>
 </body>
 </html>
